@@ -1,0 +1,84 @@
+body {
+    background-image: url("./images/bg.jpg");
+}
+
+
+@keyframes fishMovement {
+    0% {
+        transform: translate(80,10vw);
+    }
+
+    25%{
+        transform: translate(20vw,30vw);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translate(80vw,40vw);
+        animation-timing-function: ease-in;
+    }
+    75%{
+        transform: translate(30vw,40vw);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translate(80vw,10vw);
+        animation-timing-function: ease-in;
+    }
+}
+
+
+@keyframes fishMovement2 {
+    0% {
+        transform: translate(0vw,10vw);
+    }
+    10% {
+
+    }
+
+    25%{
+        transform: translate(20vw,0vw);
+        transform: scaleX(-1);
+        transition: 0s;
+    }
+
+    50% {
+        transform: translate(10vw,10vw);
+    }
+    75%{
+        transform: translate(60vw,0vw);
+    }
+
+    90% {
+        transform: translate(40vw,30vw);
+    }
+
+    100% {
+        transform: translate(0vw,10vw);
+    }
+}
+
+.color-changer{
+    color: white;
+}
+
+.fish1 {
+    width: 20%;
+    z-index: 2;
+    position: absolute;
+    animation-name: fishMovement;
+    animation-duration: 18s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.fish2 {
+    width:20%;
+    z-index: 3;
+    position: absolute;
+    animation-name: fishMovement2;
+    animation-duration: 16s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
