@@ -1,5 +1,6 @@
 body {
     background-image: url("./images/bg.jpg");
+    overflow: hidden;
 }
 
 @keyframes color-changer {
@@ -22,6 +23,19 @@ body {
     100% {
         color: white;
     }
+}
+
+
+@keyframes diver-rotate {
+    0% {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-70deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 
@@ -164,6 +178,39 @@ body {
     }
 }
 
+
+@keyframes bubbleup {
+    0% {
+        transform: translateY(60vw);
+        
+    }
+
+    15% {
+        transform: translateY(50vw);
+    }
+
+    25% {
+        transform: translate(10vw, 40vw);
+    }
+
+    50% {
+        transform: translateY(30vw);
+    }
+
+    75% {
+        transform: translate(10vw, 20vw);
+    }
+
+    90% {
+        transform: translateY(10vw);
+    }
+
+    100% {
+        transform: translate(-10vw, 0vw);
+    }
+}
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -225,7 +272,7 @@ body {
 
 .fish5 {
     width: 10%;
-    z-index: 5;
+    z-index: 6;
     position: absolute;
     animation-name: fishMovement;
     animation-duration: 35s;
@@ -236,11 +283,106 @@ body {
 
 .shark {
     width: 20%;
-    z-index: 6;
+    z-index: 7;
     position: absolute;
     animation-name: sharkMovement;
     animation-duration: 25s;
     animation-direction: normal;
     animation-iteration-count: infinite;
     transform: scaleX(-1);
+}
+
+.bubble1{
+    width: 5%;
+    position: absolute;
+    animation-name: bubbleup;
+    animation-duration: 15s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+
+.bubble2{
+    width: 15%;
+    margin-left: 50px;
+    position: absolute;
+    animation-name: bubbleup;
+    animation-duration: 8s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+
+.bubble3{
+    width: 5%;
+    margin-left: 350px;
+    position: absolute;
+    animation-name: bubbleup;
+    animation-duration: 6s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    z-index: 7;
+}
+
+
+.bubble4{
+    width: 5%;
+    margin-left: 650px;
+    position: absolute;
+    animation-name: bubbleup;
+    animation-duration: 18s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.bubble5{
+    width: 5%;
+    position: absolute;
+    animation-name: bubbleup;
+    animation-duration: 15s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    z-index: 8;
+}
+
+
+.bubble6{
+    width: 15%;
+    margin-left: 950px;
+    position: absolute;
+    animation-name: bubbleup;
+    animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+
+.bubble7{
+    width: 25%;
+    margin-left: 1350px;
+    position: absolute;
+    animation-name: bubbleup;
+    animation-duration: 12s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+
+.bubble8{
+    width: 15%;
+    margin-left: 1500px;
+    position: absolute;
+    animation-name: bubbleup;
+    animation-duration: 18s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+
+.diver{
+    margin-left: 1400px;
+    animation-name: diver-rotate;
+    animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
 }
