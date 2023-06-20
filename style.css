@@ -211,6 +211,72 @@ body {
 }
 
 
+
+@keyframes mermaid-swim {
+    0% {
+        transform: translate(5vw, 0vw);
+    }
+    5%{
+        transform: translate(7vw, 0vw);
+    }
+    10% {
+        transform: translate(10vw, -10vw);
+    }
+    15%{
+        transform: translate(12vw, -10vw);
+    }
+    20%{
+        transform: translate(15vw, -20vw);
+    }
+    25%{
+        transform: translate(18vw, -20vw);
+    }
+    30% {
+        transform: translate(20vw, -30vw);
+    }
+    35%{
+        transform: translate(23vw, -30vw);
+    }
+    40%{
+        transform: translate(25vw, -40vw);
+    }
+    45%{
+        transform: translate(27vw, -40vw);
+    }
+    50% {
+        transform: translate(30vw, -50vw);
+    }
+    55%{
+        transform: translate(33vw, -50vw);
+    }
+    60%{
+        transform: translate(35vw, -60vw);
+    }
+    70% {
+        transform: translate(40vw, -70vw);
+    }
+    80%{
+        transform: translate(45vw, -80vw);
+    }
+    90% {
+        transform: translate(0vw, -80vw);
+        opacity: 1;
+    }
+    95% {
+        transform: translate(-100vw, -80vw);
+        opacity: 0;
+    }
+    97% {
+        transform: translate(-100vw, -100vw);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(5vw, 0vw)
+    }
+}
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -383,6 +449,16 @@ body {
     margin-left: 1400px;
     animation-name: diver-rotate;
     animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+
+.mermaid {
+    width: 15%;
+    position: absolute;
+    animation-name: mermaid-swim;
+    animation-duration: 10s;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
